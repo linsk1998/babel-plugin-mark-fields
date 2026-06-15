@@ -1,0 +1,55 @@
+{
+	"name": "babel-plugin-mark-fields",
+	"version": "1.0.0",
+	"description": "Auto-mark class fields on prototype via static block for runtime introspection",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/linsk1998/babel-plugin-mark-fields.git"
+	},
+	"bugs": {
+		"url": "https://github.com/linsk1998/babel-plugin-mark-fields/issues"
+	},
+	"homepage": "https://github.com/linsk1998/babel-plugin-mark-fields#readme",
+	"author": "linsk<linsk@live.com>",
+	"license": "MIT",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc",
+		"test": "mocha tests/**/*.test.js --require ts-node/register",
+		"prepublishOnly": "npm test && npm run build"
+	},
+	"peerDependencies": {
+		"@babel/core": "^7.0.0"
+	},
+	"dependencies": {
+		"@babel/helper-plugin-utils": "^7.29.7"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.24.0",
+		"@babel/plugin-transform-class-properties": "^7.29.7",
+		"@babel/types": "^7.24.0",
+		"@types/babel__core": "~7.1.19",
+		"@types/babel__helper-plugin-utils": "~7.10.0",
+		"@types/babel__template": "~7.4.1",
+		"@types/babel__traverse": "~7.18.1",
+		"@types/node": "^14.0.0",
+		"mocha": "^8.0.1",
+		"ts-node": "^10.9.2",
+		"typescript": "~4.3.0"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
+	"keywords": [
+		"babel-plugin",
+		"class-properties",
+		"class-fields",
+		"prototype",
+		"mark",
+		"introspection"
+	],
+	"engines": {
+		"node": ">=16.0.0"
+	}
+}

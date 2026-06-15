@@ -1,0 +1,4 @@
+class Animal {
+  name;
+  age;
+}
