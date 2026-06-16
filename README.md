@@ -2,6 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/babel-plugin-mark-fields)](https://www.npmjs.com/package/babel-plugin-mark-fields)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![CI Status](https://github.com/linsk1998/babel-plugin-mark-fields/actions/workflows/ci.yml/badge.svg)](https://github.com/linsk1998/babel-plugin-mark-fields/actions)
 
 Babel 插件，自动在 class 中插入 `static {}` 块，将实例字段标记到 prototype 上。目的是让运行时代码能在实例创建前就提前知道有哪些字段。
 
